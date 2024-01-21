@@ -1,4 +1,4 @@
-package lesson_2
+package lesson_1
 
 fun main() {
     val flight_year: Int = 1961
