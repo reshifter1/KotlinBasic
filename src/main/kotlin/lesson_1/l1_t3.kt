@@ -1,13 +1,14 @@
 package lesson_1
 
 fun main() {
-    val flight_year: Int = 1961
-    var flight_hour = 9
-    var flight_minute = 7
-    println(flight_year)
-    println(flight_hour)
-    println(flight_minute)
-    flight_hour = 10
-    flight_minute = 55
-    println("[" + flight_hour + ":" + flight_minute + "]")
+    val flightYear: String = "1961"
+    var flightHour: String = "09"
+    var flightMinute: String = "07"
+
+    println(flightYear)
+    println(flightHour)
+    println(flightMinute)
+    flightHour = "10"
+    flightMinute = "55"
+    println("[" + flightHour + ":" + flightMinute + "]")
 }
