@@ -5,7 +5,7 @@ fun main() {
     var to: String = "E4"
     var turn: Int = 1
 
-    var resuls:String = "[$from-$to:$turn]"
+    var resuls:String = "[$from-$to;$turn]"
 
     println(resuls)
 
@@ -13,7 +13,7 @@ fun main() {
     to = "D3"
     turn = 2
 
-    resuls = "[$from-$to:$turn]"
+    resuls = "[$from-$to;$turn]"
 
     println(resuls)
 }
