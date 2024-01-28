@@ -1,6 +1,6 @@
 package lesson_1
 
 fun main() {
-    var sales_quantity: Int
-    var text_order: String = "Спасибо за заказ!"
+    var salesQuantity: Int = 75
+    var textOrder: String = "Спасибо за заказ!"
 }
