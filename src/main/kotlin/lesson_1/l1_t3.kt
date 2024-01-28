@@ -10,5 +10,5 @@ fun main() {
     println(flightMinute)
     flightHour = "10"
     flightMinute = "55"
-    println("[" + flightHour + ":" + flightMinute + "]")
+    println("[$flightHour:$flightMinute]")
 }
