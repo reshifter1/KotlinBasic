@@ -1,6 +1,6 @@
 package lesson_4
 
-const val totalTables: Byte = 13
+const val TOTAL_TABLES: Byte = 13
 
 fun main() {
     val tomorrowTablesLeft: Byte = 9
@@ -9,5 +9,5 @@ fun main() {
     val todayNote: String = "Доступность столиков на сегодня:"
     val tomorrowNote: String = "Доступность столиков на завтра:"
 
-    println("[$todayNote ${totalTables - todayTablesLeft > 0}],\n[$tomorrowNote ${totalTables - tomorrowTablesLeft > 0}].")
+    println("[$todayNote ${TOTAL_TABLES - todayTablesLeft > 0}],\n[$tomorrowNote ${TOTAL_TABLES - tomorrowTablesLeft > 0}].")
 }
