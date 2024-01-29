@@ -13,13 +13,10 @@ fun main() {
     println(minutes)
     println(hours)
 
-    fun intToStingWithNulls(number: Int): String {
-        return if (number < 10) "0$number" else "$number"
-    }
 
-    val secondsString = intToStingWithNulls(seconds)
-    val minutesString = intToStingWithNulls(minutes)
-    val hoursString = intToStingWithNulls(hours)
+    val secondsString = String.format("%02d", seconds)
+    val minutesString = String.format("%02d", minutes)
+    val hoursString = String.format("%02d", hours)
 
     println("$hoursString:$minutesString:$secondsString")
 }
