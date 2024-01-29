@@ -1,10 +1,10 @@
 package lesson_4
 
-fun main() {
-    val minWeight = 35
-    val maxWeight = 100
-    val maxVolume = 100
+const val minWeight = 35
+const val maxWeight = 100
+const val maxVolume = 100
 
+fun main() {
     val firstWeight = 20
     val firstVolume = 80
 
