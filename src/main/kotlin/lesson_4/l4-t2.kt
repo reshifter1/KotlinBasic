@@ -1,8 +1,8 @@
 package lesson_4
 
-const val minWeight = 35
-const val maxWeight = 100
-const val maxVolume = 100
+const val MIN_WEIGHT = 35
+const val MAX_WEIGHT = 100
+const val MAX_VOLUME = 100
 
 fun main() {
     val firstWeight = 20
@@ -11,6 +11,6 @@ fun main() {
     val secondWeight = 50
     val secondVolume = 100
 
-    println((firstVolume < maxVolume) && (firstWeight >= minWeight) && (firstWeight <= maxWeight))
-    println((secondVolume < maxVolume) && (secondWeight >= minWeight) && (secondWeight <= maxWeight))
+    println((firstVolume < MAX_VOLUME) && (firstWeight >= MIN_WEIGHT) && (firstWeight <= MAX_WEIGHT))
+    println((secondVolume < MAX_VOLUME) && (secondWeight >= MIN_WEIGHT) && (secondWeight <= MAX_WEIGHT))
 }
