@@ -1,11 +1,16 @@
 package lesson_3
 
 fun main() {
-    val age20: Byte = 20
-    val fio20: String = "Андреева Татьяна Сергеевна"
-    val age22: Byte = 22
-    val fio22: String = "Сидорова Татьяна Сергеевна"
+    var age: Byte = 20
 
-    println("[$fio20, $age20]")
-    println("[$fio22, $age22]")
+    var surname: String = "Андреева"
+    val name: String = "Татьяна"
+    val patronymic: String = "Сергеевна"
+
+    println("[$surname $name $patronymic, $age]")
+
+    age = 22
+    surname = "Сидорова"
+
+    println("[$surname $name $patronymic, $age]")
 }
