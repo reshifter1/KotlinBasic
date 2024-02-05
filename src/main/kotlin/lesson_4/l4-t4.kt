@@ -1,9 +1,12 @@
 package lesson_4
 
-const val HANDS = 1
-const val LEGS = 0
-const val BACK = 0
-const val PRESS = 1
+const val isEven = 0
+const val isOdd = 1
+
+const val HANDS = isOdd
+const val LEGS = isEven
+const val BACK = isEven
+const val PRESS = isOdd
 fun main() {
     val dayNumber = 5
 
