@@ -16,6 +16,7 @@ fun main() {
 
     val randomNumbers: Array<Int> = arrayOf(randomNumber1, randomNumber2, randomNumber3)
 
+    println("Введите 3 числа:")
     val inputNumbers: Array<Int> = arrayOf(readln().toInt(), readln().toInt(), readln().toInt())
 
     val inersectedArrayCount = inputNumbers.intersect(randomNumbers.toSet()).count()
