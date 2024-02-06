@@ -28,7 +28,6 @@ fun main() {
 
     if (readln() != zaphodPassword) {
         println(falsePassword)
-        return
     } else println(zaphodEntered)
 
 }
