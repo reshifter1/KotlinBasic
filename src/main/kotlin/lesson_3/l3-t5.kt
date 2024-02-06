@@ -1,5 +1,6 @@
 package lesson_3
 
+/*
 fun solution1() {
     val input = "[E2-E4;1]"
 
@@ -14,6 +15,7 @@ fun solution1() {
         println(turn)
     }
 }
+*/
 
 fun main () {
     val input = "[E2-E4;1]"
