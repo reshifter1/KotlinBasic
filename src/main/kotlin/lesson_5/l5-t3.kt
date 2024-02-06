@@ -10,6 +10,7 @@ fun main() {
     val randomNumber2 = START_FROM_1 + Random.nextInt(LIMIT_OF_RANDOM)
     val randomNumbers = arrayOf(randomNumber1, randomNumber2)
 
+    println("Введите числа:")
     val inputNumber1 = readln().toInt()
     val inputNumber2 = readln().toInt()
 
