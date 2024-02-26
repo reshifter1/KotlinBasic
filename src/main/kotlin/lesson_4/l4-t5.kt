@@ -6,11 +6,6 @@ const val MAX_CREW_NUMBER = 70
 const val MIN_FOOD_NUMBER = 50
 const val WEATHER_CONDITION = false
 
-const val ALT_SAFE_SHIP_CONDITION = false
-const val ALT_CREW_NUMBER = 70
-const val ALT_FOOD_NUMBER = 50
-const val ALT_WEATHER_CONDITION = true
-
 fun main() {
     println("Введите данные:")
     val isShipDamaged: Boolean = readln().toBoolean()
@@ -21,12 +16,12 @@ fun main() {
     println("Корабль может приступить к долгосрочному плаванию: " +
             (
                     (
-                        (isShipDamaged || (SAFE_SHIP_CONDITION)) && crewNumber in MIN_CREW_NUMBER..MAX_CREW_NUMBER
-                                && (foodNumber > MIN_FOOD_NUMBER) && (isGoodWeather || (!WEATHER_CONDITION))
+                        (isShipDamaged == SAFE_SHIP_CONDITION) && crewNumber in MIN_CREW_NUMBER..MAX_CREW_NUMBER
+                                && (foodNumber > MIN_FOOD_NUMBER) && (isGoodWeather || !WEATHER_CONDITION)
                     )
                     || (
-                        (isShipDamaged || (ALT_SAFE_SHIP_CONDITION)) && crewNumber == ALT_CREW_NUMBER
-                                && (foodNumber >= ALT_FOOD_NUMBER) && (isGoodWeather || (!ALT_WEATHER_CONDITION))
+                        (isShipDamaged == !SAFE_SHIP_CONDITION) && crewNumber == MAX_CREW_NUMBER
+                                && (foodNumber >= MIN_FOOD_NUMBER)
                     )
             )
     )
