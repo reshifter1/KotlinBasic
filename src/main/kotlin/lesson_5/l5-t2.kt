@@ -2,7 +2,7 @@ package lesson_5
 
 import java.util.*
 
-const val ageOfConsent = 18
+const val AGE_OF_CONSENT = 18
 
 fun main() {
     val calendar = Calendar.getInstance()
@@ -11,6 +11,6 @@ fun main() {
     println("Введите дату рождения:")
     val userBirthYear = readln().toInt()
 
-    if ((thisYear - userBirthYear) >= ageOfConsent) println("Показать экран со скрытым контентом")
+    if ((thisYear - userBirthYear) >= AGE_OF_CONSENT) println("Показать экран со скрытым контентом")
     else println("Обнови страницу и попробуй ввести год поменьше")
 }
