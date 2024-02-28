@@ -6,8 +6,8 @@ const val LIMIT_OF_RANDOM = 42
 const val START_FROM_1 = 1
 
 fun main() {
-    val randomNumber1 = START_FROM_1 + Random.nextInt(LIMIT_OF_RANDOM)
-    val randomNumber2 = START_FROM_1 + Random.nextInt(LIMIT_OF_RANDOM)
+    val randomNumber1 = (0.. LIMIT_OF_RANDOM).random()
+    val randomNumber2 = (0.. LIMIT_OF_RANDOM).random()
     val randomNumbers = arrayOf(randomNumber1, randomNumber2)
 
     println("Введите числа:")
