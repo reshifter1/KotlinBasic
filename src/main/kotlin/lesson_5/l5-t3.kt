@@ -1,13 +1,10 @@
 package lesson_5
 
-import kotlin.random.Random
-
 const val LIMIT_OF_RANDOM = 42
-const val START_FROM_1 = 1
 
 fun main() {
-    val randomNumber1 = (0.. LIMIT_OF_RANDOM).random()
-    val randomNumber2 = (0.. LIMIT_OF_RANDOM).random()
+    val randomNumber1 = (1.. LIMIT_OF_RANDOM).random()
+    val randomNumber2 = (1.. LIMIT_OF_RANDOM).random()
     val randomNumbers = arrayOf(randomNumber1, randomNumber2)
 
     println("Введите числа:")
@@ -21,5 +18,5 @@ fun main() {
         println("Вы выиграли утешительный приз!")
     else println("Неудача!")
 
-    println("Числа для победы: " + randomNumber1 + " " + randomNumber2)
+    println("Числа для победы: $randomNumber1 $randomNumber2")
 }
