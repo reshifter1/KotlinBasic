@@ -7,11 +7,14 @@ fun main() {
     println("Придумайте пароль:")
     val password = readln()
 
-    while (true) {
+    do {
         println("Введите логин и пароль:")
-        if ((username == readln()) && (password == readln())) {
-            println("Авторизация прошла успешно")
-            return
-        } else println("Данные неверны")
-    }
+        val inputUsername = readln()
+        val inputPassword = readln()
+
+        if ((username != inputUsername) && (password != inputPassword)) println("Данные неверны")
+
+    } while ((username != inputUsername) && (password != inputPassword))
+
+    println("Авторизация прошла успешно")
 }
