@@ -1,9 +1,7 @@
 package lesson_6
 
-import kotlin.random.Random
-
 fun main() {
-    val guessedNumber = Random.nextInt(1, 10)
+    val guessedNumber = (1..9).random()
     var attemptsNum = 5
 
     println("Отгадай число от 1 до 9")
