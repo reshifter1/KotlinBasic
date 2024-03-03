@@ -1,15 +1,11 @@
 package lesson_6
 
-import kotlin.random.Random
-
-
-
 fun main() {
     var attemptsNum = 3
 
     // Хочу простой, но интересный пример
     // Так у нас получатся большие числа, но которые приятно складывать между собой
-    val randomLowDigit: () -> Int = {Random.nextInt(0, 6)}
+    val randomLowDigit: () -> Int = {(0..5).random()}
     val randomLowNumber = {randomLowDigit() * 10000 + randomLowDigit() * 1000 +
             randomLowDigit() * 100 + randomLowDigit() * 10 + randomLowDigit()}
 
