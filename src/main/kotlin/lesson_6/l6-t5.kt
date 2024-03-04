@@ -3,19 +3,17 @@ package lesson_6
 fun main() {
     var attemptsNum = 3
 
-    // Хочу простой, но интересный пример
-    // Так у нас получатся большие числа, но которые приятно складывать между собой
     val randomLowDigit: () -> Int = {(0..5).random()}
     val randomLowNumber = {randomLowDigit() * 10000 + randomLowDigit() * 1000 +
             randomLowDigit() * 100 + randomLowDigit() * 10 + randomLowDigit()}
 
     fun solveProblem(): Boolean {
-        val a = randomLowNumber()
-        val b = randomLowNumber()
+        val variable1 = randomLowNumber()
+        val variable2 = randomLowNumber()
 
-        println("$a + $b =")
+        println("$variable1 + $variable2 =")
 
-        if (readln().toInt() == (a + b)) return true
+        if (readln().toInt() == (variable1 + variable2)) return true
         else return false
     }
 
