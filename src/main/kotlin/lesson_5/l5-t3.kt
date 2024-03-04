@@ -1,10 +1,10 @@
 package lesson_5
 
-const val LIMIT_OF_RANDOM = 42
+val LIMIT_OF_RANDOM2 = 42
 
 fun main() {
-    val randomNumber1 = (1.. LIMIT_OF_RANDOM).random()
-    val randomNumber2 = (1.. LIMIT_OF_RANDOM).random()
+    val randomNumber1 = (1..LIMIT_OF_RANDOM2).random()
+    val randomNumber2 = (1..LIMIT_OF_RANDOM2).random()
     val randomNumbers = arrayOf(randomNumber1, randomNumber2)
 
     println("Введите числа:")
