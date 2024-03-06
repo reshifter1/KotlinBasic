@@ -1,17 +1,14 @@
 package lesson_9
 
 fun main() {
-    val recipe: MutableList<String> = mutableListOf()
-    var ingridient: String
+    val recipeSet: MutableSet<String> = mutableSetOf()
 
-    while (recipe.count() < 5) {
+    while (recipeSet.count() < 5) {
         println("Введите ингридиент:")
-        ingridient = readln()
-
-        if (recipe.contains(ingridient)) println("Такой ингридиент уже есть!")
-        else recipe.addLast(ingridient)
+        recipeSet.add(readln())
     }
-    recipe.sort()
+
+    val recipe: MutableList<String> = recipeSet.sorted().toMutableList()
     recipe[0] = recipe[0].replaceFirstChar {it.uppercase()}
     println(recipe.joinToString(", "))
 }
