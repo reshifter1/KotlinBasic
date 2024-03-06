@@ -9,7 +9,7 @@ fun main() {
     val portionsCount = readln().toInt()
 
     println("Нужно продуктов:")
-    for (i in (0..<recipe.count())) {
-        println("${recipe[i]} ${amountForOnePortion[i] * portionsCount} ${dimension[i]}.")
+    recipe.mapIndexed { index, ingredient ->
+        println("$ingredient ${amountForOnePortion[index] * portionsCount} ${dimension[index]}.")
     }
 }
