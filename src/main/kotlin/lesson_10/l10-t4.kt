@@ -1,6 +1,6 @@
 package lesson_10
 
-val throwDice: () -> Int = {(1..6).random()}
+fun throwDice(): Int {return (1..6).random()}
 
 fun doRound(): Int {
     val personThrow = throwDice()
