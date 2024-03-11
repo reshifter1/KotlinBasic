@@ -2,13 +2,7 @@ package lesson_10
 
 fun throwDice(): Int {return (1..6).random()}
 
-fun doRound(): Int {
-    val personThrow = throwDice()
-    println("Человек выбросил $personThrow")
-
-    val robotThrow = throwDice()
-    println("Компьютер выбросил $robotThrow")
-
+fun doRound(personThrow: Int, robotThrow: Int): Int {
     when {
         personThrow > robotThrow -> {
             println("Победило человечество")
@@ -20,12 +14,20 @@ fun doRound(): Int {
     return  0
 }
 
+
 fun main() {
     var result = 0
+
     do {
-        result += doRound()
+        val personThrow = throwDice()
+        println("Человек выбросил $personThrow")
+
+        val robotThrow = throwDice()
+        println("Компьютер выбросил $robotThrow")
+
+        result += doRound(personThrow = personThrow, robotThrow = robotThrow)
         println("Хотите сыграть ещё? Напишите \"Да\", если хотите.")
     }
-    while (readln() in arrayOf("Да", "да"))
+    while (readln().equals("да", ignoreCase = true))
     println("Количество побед: $result")
 }
