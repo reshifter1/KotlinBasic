@@ -7,3 +7,8 @@ fun main() {
     println(day2.hasFallout)
 }
 
+class Weather (_dayWeather: Int, _nightWeather: Int, _hasFallout: Boolean) {
+    var dayWeather = _dayWeather
+    var nightWeather = _nightWeather
+    var hasFallout = _hasFallout
+}
