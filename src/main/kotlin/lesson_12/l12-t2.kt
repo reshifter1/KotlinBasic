@@ -6,3 +6,9 @@ fun main() {
     day2.hasFallout = true
     day2.printDay()
 }
+
+class Weather2 (var dayWeather: Int, var nightWeather: Int, var hasFallout: Boolean) {
+    fun printDay() {
+        println("$dayWeather, $nightWeather, $hasFallout")
+    }
+}
