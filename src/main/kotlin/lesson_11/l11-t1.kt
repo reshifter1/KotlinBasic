@@ -9,3 +9,15 @@ fun main() {
     user2.printParametres()
 
 }
+
+
+class User (
+    val id: Int,
+    val username: String,
+    val password: String,
+    val email: String
+){
+    fun printParametres() {
+        println("$id:$username:$password:$email")
+    }
+}
