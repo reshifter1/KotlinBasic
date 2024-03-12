@@ -1,13 +1,16 @@
 package lesson_11
 
-class User2 (
+class User2(
     val id: Int,
     val username: String,
     var password: String,
     val email: String,
     var bio: String = ""
-){
-    fun printParametres() {println("$id:$username:$password:$email")}
+) {
+    fun printParametres() {
+        println("$id:$username:$password:$email")
+    }
+
     fun setPassword() {
         println("Введите текущий пароль:")
         if (readln() == password) {
@@ -16,6 +19,7 @@ class User2 (
             println("Пароль обновлён")
         } else println("Неверный пароль")
     }
+
     fun setBio() {
         println("Введите биографию:")
         bio = readln()
