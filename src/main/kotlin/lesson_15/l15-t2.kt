@@ -13,10 +13,12 @@ class WeatherServer {
                 val temperatureValue = weatherData.value
                 println("Отправка температурных данных на сервер: $temperatureValue градусов")
             }
+
             is PrecipitationAmount -> {
                 val precipitationAmountValue = weatherData.amount
                 println("Отправка данных о количестве осадков на сервер: $precipitationAmountValue мм")
             }
+
             else -> {
                 println("Неподдерживаемый тип данных")
             }
