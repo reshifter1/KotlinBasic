@@ -13,7 +13,10 @@ fun main() {
     }
     day2.hasFallout = true
 
-    day2.printFallout()
+    println("Данные о погоде на первый день:")
+    day1.printWeather()
+    println("Данные о погоде на второй день:")
+    day2.printWeather()
 }
 
 class Weather {
@@ -23,5 +26,11 @@ class Weather {
 
     fun printFallout() {
         println("hasFallout: $hasFallout")
+    }
+
+    fun printWeather() {
+        println("Дневная температура: $dayWeather")
+        println("Ночная температура: $nightWeather")
+        println("Наличие осадков: ${if (hasFallout) "Да" else "Нет"}")
     }
 }
