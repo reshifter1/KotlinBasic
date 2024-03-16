@@ -1,6 +1,6 @@
 package lesson_12
 
-const val KELVIN_DIFFERENCE: Float = 273.15F
+const private val KELVIN_DIFFERENCE: Float = 273.15F
 
 class Weather5(_dayWeather: Float, _nightWeather: Float, _hasFallout: Boolean) {
     var dayWeather = _dayWeather - KELVIN_DIFFERENCE
