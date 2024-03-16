@@ -2,7 +2,7 @@ package lesson_13
 
 class Person5(
     val name: String,
-    val number: Long,
+    val number: Long?,
     val company: String? = null
 ) {
     fun print() { println("Имя: $name\nНомер: $number\nКомпания: ${company ?: "<не указано>"}") }
@@ -12,13 +12,14 @@ fun main() {
     val contacts = mutableListOf<Person5>()
 
     println("Введите номер телефона:")
-    var number: Long = 0
 
-    try {
-        number = readln()!!.toLong()
-    } catch (e: Exception) {
+    val number = try {
+        readln().toLong()
+    }
+    catch (e: Exception) {
         println("Ошибка: ${e.javaClass.simpleName}")
         println("Текст ошибки: ${e.message}")
+        null
     }
 
     println("Введите имя:")
