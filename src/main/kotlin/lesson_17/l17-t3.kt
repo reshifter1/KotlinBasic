@@ -1,15 +1,15 @@
 package lesson_17
 
 class Folder(
-    private val name: String,
-    private val fileCount: Int,
+    _name: String,
+    _fileCount: Int,
     private val isSecret: Boolean
 ) {
-    val folderName: String
-        get() = if (isSecret) "Скрытая папка" else name
+    val folderName: String = _name
+        get() = if (isSecret) "Скрытая папка" else field
 
-    val numberOfFiles: Int
-        get() = if (isSecret) 0 else fileCount
+    val numberOfFiles: Int = _fileCount
+        get() = if (isSecret) 0 else field
 }
 
 fun main() {
