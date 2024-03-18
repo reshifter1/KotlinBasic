@@ -1,17 +1,9 @@
 package lesson_19
 
-enum class Bullet() {
-    BLUE,
-    GREEN,
-    RED;
-
-    fun getDamage(): Int {
-        return when (this) {
-            BLUE -> 5
-            GREEN -> 10
-            RED -> 20
-        }
-    }
+enum class Bullet(val damage: Int) {
+    BLUE(5),
+    GREEN(10),
+    RED(20);
 }
 
 class Tank() {
@@ -22,7 +14,7 @@ class Tank() {
     }
 
     fun shoot() {
-        if (currentBullet != null) println("Нанесено ${currentBullet!!.getDamage()} урона")
+        if (currentBullet != null) println("Нанесено ${currentBullet!!.damage} урона")
         else println("Пушка не заряжена!")
     }
 }
